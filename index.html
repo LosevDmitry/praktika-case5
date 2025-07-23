@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Auto Slider</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- link swiper -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <section class ="home">
+            <div class="container swiper">
+            <div class="wrapper swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <div class="content">
+                        <span>Мясной шеф</span>
+                        <h3>Шашлык из краба</h3>
+                        <p>Ещё вчера он бегал по берегу океана.</p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <div class="content">
+                        <span>Мясной шеф</span>
+                        <h3>Блинчики с ягодами</h3>
+                        <p>Каждый укус доставит наслаждение.
+                        </p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <div class="content">
+                     <span>Мясной шеф</span>
+                     <h3>Оливковая пицца</h3>
+                        <p>Это просто обычная вкусная пицца. И ничего больше не нужно. 
+                        </p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <div class="content">
+                       <span>Мясной шеф</span>
+                        <h3>Пельмени</h3>
+                        <p>Традиционная русская еда.
+                        </p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <div class="content">
+                       <span>Мясной шеф</span>
+                        <h3>Бургеры</h3>
+                        <p>разрезанная пополам булочка с жареной котлетой из мясного фарша в середине. Если приготовить бургер дома из натуральных и свежих продуктов, то фаст-фуд превратится не только во вкусную, но еще и полезную еду.
+                        </p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <div class="content">
+                      <span>Мясной шеф</span>
+                     <h3>Суши</h3>
+                        <p>Да, мы их тоже готовим — не удивляйтесь.
+                        </p>
+                        <a href="#" class="btn">Заказать</a>
+                        <div class="img">
+                            <img src="img/6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+    </section> 
+<!-- Инициализация свайпера, включение клавиатуры, навигации, пагинации и автоплея -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".container", {
+        keyboard: {
+        enabled: true,
+      },
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop:true,
+    });
+  </script>
+</body>
+</html>                         
